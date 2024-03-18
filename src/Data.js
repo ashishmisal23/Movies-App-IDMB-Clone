@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import MovieList from './MovieList';
-import { getValue } from '@testing-library/user-event/dist/utils';
 
 const Data = () => {
     const [movies, setMovies] = useState([]);
@@ -19,7 +18,7 @@ const Data = () => {
                     method: 'GET',
                     headers: {
                         accept: 'application/json',
-                        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxYTIxNTEzZWRhYjA5NWRlMzFhNGUyMzU2ZGY5OTUxZiIsInN1YiI6IjY1Zjg5ZDMwMTYwZTczMDE4M2Y5NDFjNCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nNcDSOK44UnSGxQSI33WA9plEdYLh5b3mm3_ArABfUg'
+                        Authorization: `Bearer ${process.env.REACT_APP_KEY}`
                     }
                 };
 
