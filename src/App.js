@@ -1,10 +1,19 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Data from './Data'
-
+import MovieData from './MovieData'
 const App = () => {
+
+
   return (
-    <Data />
+    <Router >
+      <Routes>
+        <Route exact path='/' element={<MovieData />} />
+        <Route path='/*' element={<h2>Error</h2>} />
+      </Routes>
+    </Router>
+
+
   )
 }
 
