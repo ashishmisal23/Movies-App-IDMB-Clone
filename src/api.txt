@@ -1,0 +1,8 @@
+Top Rated
+    https://api.themoviedb.org/3/movie/top_rated
+
+Popular
+    https://api.themoviedb.org/3/movie/popular
+
+Upcoming
+    https://api.themoviedb.org/3/movie/upcoming
